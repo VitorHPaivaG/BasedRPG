@@ -34,7 +34,5 @@ namespace BasedRPG
 
             return new Player(Name, Sex, Age);
         }
-
-
     }
 }
