@@ -11,7 +11,6 @@ namespace BasedRPG
         public string Name { get; set; }
         public string Sex { get; set; }
         public string Age { get; set; }
-        //public string Description { get; set; }//fazer isso outra hora
         
         public Player() { }
         //dar uma relembrada do pq ter o Name = _name, esqueci alguns detalhes
@@ -20,22 +19,22 @@ namespace BasedRPG
             Name = _name;
             Sex = _sex;
             Age = _age;
-            //Description = _description;
         }
 
         public Player PlayerInfo()
         {
-            Console.Write("Welcome traveler, what is your name?: ");
+            Console.Write("Name: ");
             Name = Console.ReadLine();
 
-            Console.Write("Intersting name, you are not from here, are you? Anyway, what is your sex?: ");
+            Console.Write("Sex [M/F]: ");
             Sex = Console.ReadLine();
 
-            Console.Write("I see, mind if i know your age?: ");
+            Console.Write("Age: \n");
             Age = Console.ReadLine();
 
             return new Player(Name, Sex, Age);
         }
+
 
     }
 }
